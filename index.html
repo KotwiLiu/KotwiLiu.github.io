@@ -1,75 +1,83 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Kotwi HOME</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    .navbar {
-      position: fixed;
-      width: 100%;
-      opacity: 0.85;
-      margin-top: 10px;
-    }
-
-    footer {
-      background-color: #B3B8C6;
-      padding: 25px;
-    }
-
-    #div1 {
-      background-image: url(IMG_3851.jpg);
-      background-size: cover;
-      height: 800px;
-    }
-    p {
-      font-family: cursive;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotwi | Driving Brand Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; }
+        .gradient-text {
+            background: linear-gradient(to right, #ec4899, #8b5cf6, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-button {
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+            transition: box-shadow 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 30px rgba(236, 72, 153, 0.7);
+        }
+        /* Subtle entrance animation */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-up { animation: fadeUp 0.8s ease-out forwards; }
+        .delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .delay-2 { animation-delay: 0.4s; opacity: 0; }
+    </style>
 </head>
-<body>
+<body class="font-sans antialiased overflow-x-hidden selection:bg-pink-500 selection:text-white">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">KOTWI</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="About Me.html">About</a></li>
-        <li><a href="Kotwi.html">Gallery</a></li>
-        <li><a href="mailto:kotwiliu@gmail.com">Contact</a></li>
-        <li><a href="https://www.instagram.com/kotwiliu/">Instagram</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="Personal C.V..pdf"><span class="glyphicon glyphicon-star-empty"></span>My C.V</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto animate-fade-up">
+        <div class="text-2xl font-black tracking-tighter">KOTWI<span class="text-pink-500"> LIU</span></div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+            <a href="#case-studies" class="hover:text-white transition">Case Studies</a>
+            <a href="#expertise" class="hover:text-white transition">Expertise</a>
+        </div>
+        <a href="mailto:KOTWI@email.com" class="px-5 py-2.5 bg-white text-black font-bold rounded-full hover:bg-slate-200 transition">Let's Talk</a>
+    </nav>
 
-<div class="jumbotron" id="div1">
-  <div class="container text-center">
-    <h1>KOTWI</h1>
-    <p>🇬🇧&🇺🇸&🚂&✈️&📷 Lovєя</p>
-  </div>
-</div>
+    <header class="max-w-6xl mx-auto px-6 py-32 text-center relative flex flex-col items-center">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
 
-<div class="container-fluid bg-3 text-center">
-  <h3>Welcome !!</h3><br><hr>
-  <p>Hi! My name is Kotwi Liu. This is my website ~ </p>
+        <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-slate-700 bg-slate-800/50 text-sm font-medium text-slate-300 animate-fade-up">
+            🚀 Available for Q3 Projects
+        </div>
+        
+        <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight tracking-tight animate-fade-up delay-1">
+            I scale brands with <br />
+            <span class="gradient-text">world-class digital.</span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mb-10 animate-fade-up delay-2 font-light">
+            Stop losing leads to bad design. I build high-performance web experiences that capture attention and drive revenue.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 animate-fade-up delay-2">
+            <a href="#contact" class="glow-button px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-full text-lg hover:scale-105 transition transform">
+                Book a Strategy Call
+            </a>
+            <a href="#case-studies" class="px-8 py-4 bg-slate-800 text-white font-bold rounded-full text-lg border border-slate-700 hover:bg-slate-700 transition">
+                View My Work
+            </a>
+        </div>
+    </header>
 
-<footer class="container-fluid text-center">
-  <p>Copyright © WTF Corporation. All rights reserved.</p>
-</footer>
+    <section class="border-y border-slate-800 bg-slate-900/50 py-10">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-6">experienced with innovative teams at</p>
+            <div class="flex flex-wrap justify-center gap-10 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                <div class="text-2xl font-bold font-serif">W HOTELS</div>
+                <div class="text-2xl font-bold font-serif">Mercedes-Benz</div>
+                <div class="text-2xl font-bold font-serif">FORD</div>
+                <div class="text-2xl font-bold font-serif">Roche</div>
+                <div class="text-2xl font-bold font-serif">QNAP</div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
